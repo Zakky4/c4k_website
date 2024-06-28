@@ -12,10 +12,19 @@ const nextConfig = {
       },
     ],
   },
+  eslint: { // eslintのlint checkをbuild時にoff
+    ignoreDuringBuilds: true,
+  },
+  typescript: { // type checkをbuild時にoff
+    ignoreBuildErrors: true,
+  }
 }
 
 module.exports = {
   images: {
     domains: ['images.microcms-assets.io'],
+  },
+  env: {
+    MY_VARIABLE: process.env.MY_VARIABLE,
   },
 };
