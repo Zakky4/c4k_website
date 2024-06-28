@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFolderOpen } from "@fortawesome/free-regular-svg-icons";
 
 export default function PostCategories({ categories }) {
+  // console.log(categories);
   return (
     <div className={styles.flexContainer}>
       <h3 className={styles.heading}>
@@ -11,15 +12,14 @@ export default function PostCategories({ categories }) {
         <span className="sr-only">Categories</span>
       </h3>
       <ul className={styles.list}>
-        {categories && categories.length > 0 ? (
-          categories.map(({ name, slug }) => (
-            <li key={slug}>
-              <Link href={`/blog/category/${slug}`}>{name}</Link>
-            </li>
-          ))
-        ) : (
-          <li>カテゴリがありません</li>
-        )}
+        {/* {categories.map(({ name, slug }) => ( */}
+          {/* <li key={slug}> */}
+          <li>
+            <Link href={`/blog/category/${categories.slug}`}>
+              {categories.name}
+            </Link>
+          </li>
+        {/* ))} */}
       </ul>
     </div>
   );

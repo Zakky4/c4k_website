@@ -29,8 +29,10 @@ export default async function Post({ params }) {
   const slug = params.slug
 
   const post = await getPostBySlug(slug)
-
-  const { title, publishDate: publish, content, categories } = post
+  
+  // console.log(post.category['name']);
+  // const { title, publishDate: publish, content, categories } = post
+  const { title, publishDate: publish, content, category } = post
 
   const description = extractText(content)
 
@@ -69,7 +71,7 @@ export default async function Post({ params }) {
             </PostBody>
           </TwoColumnMain>
           <TwoColumnSidebar>
-            <PostCategories categories={categories} />
+            <PostCategories categories={category} />
           </TwoColumnSidebar>
         </TwoColumn>
 
