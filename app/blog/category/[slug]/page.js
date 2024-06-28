@@ -20,7 +20,8 @@ export default async function Category({ params }) {
   const allCats = await getAllCategories()
   const cat = allCats.find(({ slug }) => slug === catSlug)
   const name = cat.name
-
+  // console.log(cat.id);
+  
   const posts = await getAllPostsByCategory(cat.id)
 
   for (const post of posts) {

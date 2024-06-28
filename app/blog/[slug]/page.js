@@ -30,7 +30,6 @@ export default async function Post({ params }) {
 
   const post = await getPostBySlug(slug)
   
-  // console.log(post.category['name']);
   // const { title, publishDate: publish, content, categories } = post
   const { title, publishDate: publish, content, category } = post
 
