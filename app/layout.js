@@ -12,7 +12,7 @@ import Layout from 'components/layout'
 import { siteMeta } from 'lib/constants'
 const { siteLang } = siteMeta
 
-import GoogleAnalytics from 'components/googleanalytics'
+// import GoogleAnalytics from 'components/googleanalytics'
 
 // Font Awesomeの設定
 import '@fortawesome/fontawesome-svg-core/styles.css'
@@ -24,7 +24,7 @@ export default function RootLayout({ children }) {
     <html lang={siteLang}>
       <body>
         <Suspense>
-          <GoogleAnalytics />
+          {/* <GoogleAnalytics /> */}
         </Suspense>
         <Layout>{children}</Layout>
       </body>
