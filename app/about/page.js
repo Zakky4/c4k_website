@@ -1,22 +1,21 @@
-import Container from 'components/container'
-import Hero from 'components/hero'
-import PostBody from 'components/post-body'
-import Contact from 'components/contact'
+import Container from "components/container";
+import Hero from "components/hero";
+import PostBody from "components/post-body";
+import Contact from "components/contact";
 import {
   TwoColumn,
   TwoColumnMain,
   TwoColumnSidebar,
-} from 'components/two-column'
-import Accordion from 'components/accordion'
-import Image from 'next/legacy/image'
-import eyecatch from 'images/about.jpg'
-
+} from "components/two-column";
+import Accordion from "components/accordion";
+import Image from "next/legacy/image";
+import eyecatch from "images/about.jpg";
 // サイトに関する情報
-import { siteMeta } from 'lib/constants'
-const { siteTitle, siteUrl } = siteMeta
+import { siteMeta } from "lib/constants";
+const { siteTitle, siteUrl } = siteMeta;
 
 // ベースのメタデータ
-import { openGraphMetadata, twitterMetadata } from 'lib/baseMetadata'
+import { openGraphMetadata, twitterMetadata } from "lib/baseMetadata";
 
 export default function About() {
   return (
@@ -24,48 +23,58 @@ export default function About() {
       <Hero title="About" subtitle="About development activities" />
 
       <figure>
-        <Image
+        {/* <Image
           src={eyecatch}
           alt=""
           layout="responsive"
           sizes="(min-width: 1152px) 1152px, 100vw"
           priority
           placeholder="blur"
-        />
+        /> */}
       </figure>
 
       <TwoColumn>
         <TwoColumnMain>
           <PostBody>
             <p>
-              Cubeが得意とする分野はモノづくりです。3次元から2次元の造形、プログラミングやデザインなど、さまざまな技術を組み合わせることによって社会や環境と結びつけるクリエイティブを提案し続けています。
-            </p>
-            <h2>モノづくりで目指していること</h2>
-            <p>
-              モノづくりではデータの解析からクリエイティブまで幅広いことを担当しています。新しいことを取り入れながら、ユーザーにマッチした提案を実現するのが目標です。たくさんの開発・提供が数多くありますが、特にそこを磨く作業に力を入れています。
-            </p>
-            <p>
-              単純に形にするだけでなく、作る過程や、なぜそのようにしたのかを大事にしながらものづくりをしています。毎回課題解決テーマをもって「モノ」と向き合い制作をし、フィードバックしてもらうことで自分の中にあるモヤモヤを言葉にして「問い」への答えを出しています。
-            </p>
-            <h3>新しいことへのチャレンジ</h3>
-            <p>
-              今までと違うものを作ることで愛着が湧いてきます。そこで興味を持ったことは小さなことでもいいから取り入れて、良いものを作れるようにしています。小さなヒントから新しいものを生み出すようなモノづくりは、これからも続けていきたいです。
+              code4kaizenは、業務改善のスペシャリストです。プログラミングやSaaSなど、多様な技術を巧みに組み合わせ、業務効率化の革新的なソリューションを提供し続けています。私たちの目指すところは、クライアントの生産性を飛躍的に向上させることです。
             </p>
 
-            <h2>FAQ</h2>
-            <Accordion heading="プログラミングのポイントについて">
+            <h2>目指していること</h2>
+            <p>
+              業務改善においては、データ解析からクリエイティブな提案まで幅広く対応しています。常に新しいアイデアを取り入れ、顧客に最適なソリューションを提供することを目標としています。多くのプロジェクトを手がける中で、特に細部にこだわった業務改善に力を注いでいます。
+            </p>
+            <p>
+              単に結果を出すだけでなく、その過程や理由を大切にしながら業務改善を行っています。毎回課題解決をテーマに掲げ、業務に真摯に向き合い、フィードバックを活かすことで、お客様のニーズに応える最適な答えを導き出しています。
+            </p>
+
+            <h2>新しいことへのチャレンジ</h2>
+            <p>
+              これまでにないものを開発することで、愛着が生まれてきます。興味を持ったことは小さなことでも積極的に取り入れ、より良いものを作るように心がけています。小さなヒントから新しいものを生み出すような開発を、これからも続けていきたいと考えています。
+            </p>
+
+            <h2>自己紹介</h2>
+            <Accordion heading="経歴">
               <p>
-                プログラミングのポイントは、作りたいものを作ることです。楽しいことから思いつき、目標とゴールを決め、そこに向かってさまざまな課題を設定していきながら、プログラムを作っていきます。
+                20年以上のIT業界経験を持ち、WEB開発、インフラ構築、ディレクション、プロジェクトマネジメントといった分野で技術を磨いてきました。
+                <br />
+                Web制作と開発における最適化とセキュリティを重視した実装能力を持ち、外部サービスとの連携を通じて業務効率化ソリューションを提供してきました。
+                <br />
+                プロジェクトマネジメントの分野では、戦略的なアプローチでプロジェクトを成功に導いています。
+                <br />
+                また、新しい分野（特にNext.jsとChatGPT）の吸収に取り組んでおり、自己学習を通じて最新技術を常に取り入れることに努めています。
+                <br />
+                この技術力と経験を活かし、顧客の業務課題解決に貢献したいと思います。
               </p>
             </Accordion>
-            <Accordion heading="古代語の解読について">
+            <Accordion heading="制作スキル">
               <p>
-                古代語を解読するのに必要なのは、書かれた文字そのものだけです。古代の世界観や思考方法。それらを読み取ってこそ古代の世界観が理解できてきます。
+              HTML / CSS / JavaScript / GAS / PHP / Python / Shopify / Liquid  / LINE公式 / Lステップ
               </p>
             </Accordion>
-            <Accordion heading="公開リポジトリの活用について">
+            <Accordion heading="ツール">
               <p>
-                公開リポジトリを活用すると、全世界のどこからでもアクセスし、開発者が関連するプロジェクトのタスクを利用することができます。
+              GitHub / Notion / Canva / Figma / Google Workspace / Zendesk
               </p>
             </Accordion>
           </PostBody>
@@ -76,14 +85,14 @@ export default function About() {
         </TwoColumnSidebar>
       </TwoColumn>
     </Container>
-  )
+  );
 }
 
 // メタデータ
-const pageTitle = 'アバウト'
-const pageDesc = 'About development activities'
-const ogpTitle = `${pageTitle} | ${siteTitle}`
-const ogpUrl = new URL('/about', siteUrl).toString()
+const pageTitle = "アバウト";
+const pageDesc = "About development activities";
+const ogpTitle = `${pageTitle} | ${siteTitle}`;
+const ogpUrl = new URL("/about", siteUrl).toString();
 
 export const metadata = {
   title: pageTitle,
@@ -108,4 +117,4 @@ export const metadata = {
     description: pageDesc,
     images: [eyecatch.src],
   },
-}
+};
