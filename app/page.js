@@ -21,7 +21,7 @@ export default async function Home() {
 
   return (
     <Container>
-      <Hero title="c4k" subtitle="コードで業務改善" imageOn />
+      <Hero title="c4k" subtitle="業務課題をコードで解決" imageOn />
 
       <Posts posts={posts} />
       <Pagination nextUrl="/blog" nextText="More Posts" />
