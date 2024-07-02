@@ -21,7 +21,7 @@
 // }
 
 module.exports = {
-  output: 'export',
+  // output: 'export',
   images: {
     domains: ['images.microcms-assets.io'],
   },
