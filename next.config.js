@@ -1,24 +1,24 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-  reactStrictMode: true,
-  images: {
-    // domains: ['images.microcms-assets.io'],
-    remotePatterns: [
-      {
-        protocol: 'https',
-        hostname: 'images.microcms-assets.io',
-        port: '',
-        pathname: '/assets/xxxxxxxxxx/**',
-      },
-    ],
-  },
-  eslint: { // eslintのlint checkをbuild時にoff
-    ignoreDuringBuilds: true,
-  },
-  typescript: { // type checkをbuild時にoff
-    ignoreBuildErrors: true,
-  }
-}
+// const nextConfig = {
+//   reactStrictMode: true,
+//   images: {
+//     // domains: ['images.microcms-assets.io'],
+//     remotePatterns: [
+//       {
+//         protocol: 'https',
+//         hostname: 'images.microcms-assets.io',
+//         port: '',
+//         pathname: '/assets/xxxxxxxxxx/**',
+//       },
+//     ],
+//   },
+//   eslint: { // eslintのlint checkをbuild時にoff
+//     ignoreDuringBuilds: true,
+//   },
+//   typescript: { // type checkをbuild時にoff
+//     ignoreBuildErrors: true,
+//   }
+// }
 
 module.exports = {
   images: {
