@@ -1,9 +1,9 @@
 {
-  "name": "blog",
+  "name": "nextjs-blog",
   "private": true,
-  "description": "『作って学ぶ Next.js/React Webサイト構築』の副読本「Next.js 13 対応ガイド」の「本書のプロジェクトをApp Routerへ移行する方法」で完成させるプロジェクトデータです",
-  "homepage": "https://github.com/ebisucom/next-react-website",
-  "author": "エビスコム - EBISUCOM (https://ebisu.com/)",
+  "description": "c4k website",
+  "homepage": "https://github.com/Zakky4/c4k_website",
+  "author": "Zakky (https://code4kaizen.com/)",
   "version": "1.0.0",
   "scripts": {
     "dev": "next dev",
