@@ -27,4 +27,5 @@ module.exports = {
   env: {
     MY_VARIABLE: process.env.MY_VARIABLE,
   },
+  output: 'export',
 };
