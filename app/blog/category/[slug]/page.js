@@ -15,7 +15,7 @@ const { siteTitle, siteUrl } = siteMeta
 import { openGraphMetadata, twitterMetadata } from 'lib/baseMetadata'
 
 // ISR
-export const revalidate = 0;
+export const revalidate = 60;
 
 export default async function Category({ params }) {
   const catSlug = params.slug
