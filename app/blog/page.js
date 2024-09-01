@@ -14,6 +14,9 @@ const { siteTitle, siteUrl } = siteMeta
 // ベースのメタデータ
 import { openGraphMetadata, twitterMetadata } from 'lib/baseMetadata'
 
+// ISR
+export const revalidate = 0;
+
 export default async function Blog() {
   const posts = await getAllPosts()
 
